@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (strong, nonatomic) IBOutlet UITextField *email;
 
 
+- (IBAction)call:(id)sender;
+- (IBAction)message:(id)sender;
+- (IBAction)sendEmail:(id)sender;
 @end
 
